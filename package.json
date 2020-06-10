@@ -6,10 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://shengng325.github.io/sudoku-solver-visualizer/",
   "devDependencies": {
     "css-loader": "^3.5.3",
     "style-loader": "^1.2.1",
@@ -17,5 +19,7 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^3.0.0"
+  }
 }
