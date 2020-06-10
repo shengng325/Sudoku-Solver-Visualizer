@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./bundle.js"></script>
+    <title>Sudoku Solver Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css">
+</head>
+
+<body>
+    <div class="row py-2 mx-0 bg-dark">
+        <div class="col text-center text-white">
+            <h2>Sudoku Solver Visualizer</h2>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row justify-content-center">
+            <button type="button" class="btn btn-outline-primary px-4  m-3" id="button-4x4">4x4</button>
+            <button type="button" class="btn btn-outline-primary active px-4  m-3" id="button-9x9">9x9</button>
+            <button type="button" class="btn btn-outline-primary px-3  m-3" id="button-16x16">16x16</button>
+        </div>
+
+        <div class="row">
+            <div class="col d-flex justify-content-center mb-3">
+                <table id="sudoku"></table>
+            </div>
+        </div>
+
+        <div class="row mt-1 justify-content-center">
+            <div class="col-auto mb-2">
+                <div class="row mb-1">
+                    <div class="col d-flex justify-content-center ">
+                        <div class="row">
+                            <div class="col-sm p-0 mr-3 text-center">
+                                <label for="animation-slider" class="h6"><strong>Animation interval:</strong></label>
+                            </div>
+                            <div class="col-sm p-0 text-center">
+                                <input id="animation-slider" data-slider-id='slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="4"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col d-flex justify-content-center">
+                        <button class="btn-lg btn-danger m-2" id="clear-button" type="button">Clear</button>
+                        <button class="btn-lg btn-success m-2 pop" id="solve-button" type="button"  data-container="body"  data-placement="top" data-content="Click once more to skip animation">Solve</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto ml-3 mb-2">
+                <div class="card" style="width: 12rem;">
+                    <h6 class="card-header py-2"><strong>Status</strong></h6>
+                        <div class="card-body py-1">
+                        <p class="card-text my-1" id="iteration-count">Iterations: 0</p>
+                        <p class="card-text my-1" id="time-count">Time: 0s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
