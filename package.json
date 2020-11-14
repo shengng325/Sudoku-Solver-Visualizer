@@ -11,7 +11,7 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://shengng325.github.io/sudoku-solver-visualizer/",
+  "homepage": "https://shengng325.github.io/Sudoku-Solver-Visualizer/",
   "devDependencies": {
     "css-loader": "^3.5.3",
     "style-loader": "^1.2.1",
